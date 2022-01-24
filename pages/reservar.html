@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Bungee+Shade&family=Candal&family=Changa+One&display=swap" rel="stylesheet">
+    <title>Reservar - Silvano</title>
+</head>
+<body>
+    <div class="contenedorPages">
+        <div class="header">
+            <div class="logo">
+                <h1> <a href="../index.html"> Restaurante Silvano </a></h1>
+            </div>
+            <div class="nav">
+                <ul class="menuNav">
+                    <li><a href="../pages/historia.html"> Historia </a></li>
+                    <li><a href="../pages/menu.html"> Menú</a></li>
+                    <li><a href="../pages/comollegar.html"> Cómo llegar</a></li>
+                    <li><a href="../pages/reservar.html"> Reservar</a></li>
+            </ul>
+            </div>
+        </div>
+
+        <div class="mainPages">
+            <form action="">
+                <fieldset class="formularioReserva">
+                    <legend class="tituloFormulario">Reservar</legend>
+                <div>
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" placeholder="Escriba su nombre">
+                </div>
+                <div>
+                    <label for="pax">Cantidad de comensales</label>
+                    <input type="number" name="pax" min="1" max="40">
+                </div>
+                <div>
+                    <label for="fecha">Fecha</label>
+                    <input type="date" name="fecha">
+                </div>
+                <div>
+                    <label for="email">Email</label>
+                    <input type="email" name="email" placeholder="Escriba su email">
+                </div>
+                <div>
+                    <label for="comentarios"></label>
+                    <textarea name="comentarios" id="" cols="30" rows="5">Escriba su comentario</textarea>
+                </div>
+                <div>
+                    <label for="acepto">Acepto no traer mascota</label>
+                    <input type="checkbox" name="acepto" value="acepto"
+                    required>
+                </div>
+                <div>
+                    <input type="reset" value="Borrar formulario">
+                    <input type="submit" value="Enviar formulario">
+                </div>
+            </fieldset>
+            </form>
+        </div>
+
+        <div class="footer">
+           <div class="logoSurtidor">
+               <img src="../img/WhatsApp Image 2022-01-16 at 10.40.38 PM.jpeg" alt="logo">
+           </div>
+           <div class="datos">
+               <h3>Telefono</h3>
+               <p>+5492324453130</p>
+               <h3>Abierto</h3>
+               <p>Sabados, Domingos y feriados</p>
+               <p>12hs hasta 16hs</p>
+           </div>
+        </div>
+    </div>
+           
+      
+</body>
+</html>

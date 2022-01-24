@@ -1,0 +1,389 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* pantalla mobile*/
+/*comienzo de mobile 320px*/
+/* no es necesario porque lo arranco con 375
+
+@media only screen and ( max-width:320px ){
+
+.contenedor{
+    height: 700px;
+}
+
+.header{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+}
+h1 a{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+.nav{
+    margin-bottom: 20px;
+}
+.menuNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style: none;
+}
+.menuNav li a{
+    text-decoration: none;
+    color: blanchedalmond;
+    margin: 5px;
+    font-size: 10px;
+}
+.main{
+    height: 600px;
+}
+.datos{
+    font-size: 10px;
+}  
+}
+*/
+/*fin de mobile 320px*/
+
+
+/* inicio de mobile 375*/
+@media only screen and (max-width: 375px){
+
+    .contenedor{
+        height: 700px;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    }
+    h1 a{
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+    }
+    .nav{
+        margin-bottom: 20px;
+    }
+    .menuNav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+    }
+    .menuNav li a{
+        text-decoration: none;
+        color: blanchedalmond;
+        margin: 5px;
+        font-size: 14px;
+    }
+    .main{
+        height: 600px;
+    }
+    .datos{
+        font-size: 12px;
+    }  
+    .googleMap{
+        width: 375px;
+        height: 420px;
+    }
+    .contenedorPagesmenu{
+        height: 2300px;
+        grid-template-rows: 5% 90% 5%;
+
+    }
+    .mainPagesmenu{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas:
+        "foto1"
+        "foto2"
+        "foto3"
+        "foto4"
+        "foto5"
+        "foto6"
+        "foto7"
+        "foto8"
+    }
+}
+
+/* inicio mobile 375 para arriba*/
+@media only screen and (min-width: 375px){
+
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    }
+    h1 a{
+        text-decoration: none;
+        color: white;
+        font-size: 30px;
+    }
+    .nav{
+        margin-bottom: 20px;
+    }
+    .menuNav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+    }
+    .menuNav li a{
+        text-decoration: none;
+        color: blanchedalmond;
+        margin: 5px;
+        font-size: 18px;
+    }
+    .main{
+        height: 600px;
+    }
+    .datos{
+        font-size: 14px;
+    }      
+    .googleMap{
+        width: 425px;
+    }
+    .contenedorPagesmenu{
+        height: 2300px;
+        grid-template-rows: 5% 90% 5%;
+
+    }
+    .mainPagesmenu{
+        grid-template-columns: 100%;
+        grid-template-rows: repeat(8, 1fr);
+        grid-template-areas:
+        "foto1"
+        "foto2"
+        "foto3"
+        "foto4"
+        "foto5"
+        "foto6"
+        "foto7"
+        "foto8"
+    }
+}
+
+/* menu para 768*/
+@media only screen and (min-width: 768px){
+    .contenedorPagesmenu{
+        height: 1140px;
+        grid-template-rows: 10% 80% 10%;
+
+    }
+    .mainPagesmenu{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas:
+        "foto1 foto2"
+        "foto3 foto4"
+        "foto5 foto6"
+        "foto7 foto8"
+    }
+}
+
+/* inicio mobile 992*/
+@media only screen and (min-width: 992px){
+
+    .contenedor{
+        height: 1230px;
+    }
+    .header{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        
+    }
+    h1 a{
+        text-decoration: none;
+        color: white;
+        font-size: 40px;
+    }
+    .nav{
+        margin-bottom: 20px;
+    }
+    .menuNav{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        list-style: none;
+    }
+    .menuNav li a{
+        text-decoration: none;
+        color: blanchedalmond;
+        margin: 8px;
+        font-size: 20px;
+    }
+    .main{
+        height: 85%;
+    }
+    
+    .datos{
+        font-size: 
+    }
+    .logoSurtidor img{
+        height: 145px;
+    }
+
+    .contenedorPagesmenu{
+        height: 700px;
+        grid-template-rows: 15% 70% 15%;
+
+    }
+    .mainPagesmenu{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas:
+        "foto1 foto2 foto3 foto4"
+        "foto5 foto6 foto7 foto8"
+    }
+    
+}
+
+
+
+/*fin pantalla mobile*/
+
+
+.contenedor{
+    height: 600px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 70% 15%;
+    grid-template-areas: 
+    "header"
+    "main"  
+    "footer";    
+}
+.contenedorPages{
+    height: 700px;
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-rows: 15% 70% 15%;
+    grid-template-areas: 
+    "header"
+    "main"  
+    "footer"; 
+}
+.contenedorPagesmenu{
+    display: grid;
+    width: 100%;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "header"
+    "main"  
+    "footer"; 
+}
+
+
+/*header*/
+.header{
+    grid-area: header;
+    display: flex;
+    flex-direction: column;
+    background-color: red;
+    font-family: 'candal' , sans-serif ;
+    position: sticky;
+    top: 0px;
+    text-align: center;
+}
+
+/*main*/
+.main{
+    grid-area: main;
+    background-image: url(./img/manospasta_principal_Mediano.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.mainPages{
+    grid-area: main;
+    background-color: blanchedalmond;
+}
+/*galeria de la seccion menu*/
+.mainPagesmenu{
+    background-color: blanchedalmond;
+    display: grid;
+    /* lo hago con @media
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: 
+    "foto1" "foto2" "foto3" "foto4"
+    "foto5" "foto6" "foto7" "foto8";
+    */
+    align-items: center;
+    justify-items: center;
+}
+.mainPagesmenu div img{
+    width: 200px;
+    height: 200px;
+}
+.foto1{
+    grid-area: "foto1";
+}
+.foto2{
+    grid-area: "foto2";
+}
+.foto3{
+    grid-area: "foto3";
+}
+.foto4{
+    grid-area: "foto4";
+}
+.foto5{
+    grid-area: "foto5";
+}
+.foto6{
+    grid-area: "foto6";
+}
+.foto7{
+    grid-area: "foto7";
+}
+.foto8{
+    grid-area: "foto8";
+}
+
+
+/*footer*/
+.footer{
+    grid-area: footer;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: rgb(0, 0, 0);
+    font-family: 'candal', sans-serif;
+}
+.logoSurtidor img{
+    height: 85px;
+}
+.datos h3{
+    color: blanchedalmond;
+}
+.datos p{
+    color: blanchedalmond;
+}
+
+/* formulario de reserva*/
+.formularioReserva{
+    width: 95%;
+    margin: 10px;
+    padding: 5px;
+}
+.formularioReserva div{
+    margin: 10px;
+    padding: 3px;
+}
+.tituloFormulario{
+    font-family: 'candal', sans-serif;
+    font-size: 16px;
+}
+/* fin formulario */
